@@ -1,12 +1,16 @@
 package expenseTracker;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.time.Month;
+import java.time.Year;
 import java.util.Scanner;
 import java.util.List;
 import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
+
         String fileName ="venmo_statement.csv";
         File statement = new File(fileName);
         try {
