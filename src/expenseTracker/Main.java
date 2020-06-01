@@ -13,6 +13,7 @@ public class Main {
 
         String fileName ="venmo_statement.csv";
         File statement = new File(fileName);
+        //Attempt to open file and go through every line
         try {
             Scanner readStatement = new Scanner(statement);
             System.out.println("opening file");
@@ -23,6 +24,7 @@ public class Main {
             }
             readStatement.close();
         }
+        //If file is not found catch the error and print the error stack
         catch(FileNotFoundException err) {
             System.out.println("File not found!");
             err.printStackTrace();
