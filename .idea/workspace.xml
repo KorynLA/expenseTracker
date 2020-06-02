@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -20,7 +21,25 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ExpenseTest.testAmount">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="expenseTracker.Main" />
       <module name="expenseTrackers" />
@@ -31,8 +50,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExpenseTest.testAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenseTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ExpenseTest" />
+      <option name="METHOD_NAME" value="testAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpenseTest.testName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="expenseTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ExpenseTest" />
+      <option name="METHOD_NAME" value="testName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExpenseTest.testAmount" />
+        <item itemvalue="JUnit.ExpenseTest.testName" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -57,29 +110,46 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="478" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1591049065042" />
-    <state width="1358" height="204" key="GridCell.Tab.0.bottom" timestamp="1591050226607">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state width="1358" height="204" key="GridCell.Tab.0.bottom" timestamp="1591130851837">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1591050226607" />
+    <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1591130851837" />
+    <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1591050512919" />
     <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1590890245629" />
-    <state width="1358" height="204" key="GridCell.Tab.0.center" timestamp="1591050226605">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state width="1358" height="204" key="GridCell.Tab.0.center" timestamp="1591130851836">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1591050226605" />
+    <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1591130851836" />
+    <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1591050512918" />
     <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1590890245628" />
-    <state width="1358" height="204" key="GridCell.Tab.0.left" timestamp="1591050226604">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state width="1358" height="204" key="GridCell.Tab.0.left" timestamp="1591130851836">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1591050226604" />
+    <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1591130851836" />
+    <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1591050512917" />
     <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1590890245627" />
-    <state width="1358" height="204" key="GridCell.Tab.0.right" timestamp="1591050226606">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state width="1358" height="204" key="GridCell.Tab.0.right" timestamp="1591130851837">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1591050226606" />
+    <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1591130851837" />
+    <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1591050512919" />
     <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1590890245628" />
-    <state x="405" y="181" key="search.everywhere.popup" timestamp="1591036145292">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="452" y="357" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591129694858">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state x="452" y="357" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.832@0.23.1440.832" timestamp="1591129694858" />
+    <state x="402" y="78" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591129409769">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="402" y="78" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.832@0.23.1440.832" timestamp="1591129409768" />
+    <state x="519" y="190" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591129434087">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="519" y="190" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.832@0.23.1440.832" timestamp="1591129434087" />
+    <state x="405" y="181" width="670" height="676" key="search.everywhere.popup" timestamp="1591129751325">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="405" y="181" width="670" height="676" key="search.everywhere.popup/0.23.1440.832@0.23.1440.832" timestamp="1591129751325" />
     <state x="405" y="181" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1591036145292" />
   </component>
 </project>
