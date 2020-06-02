@@ -39,11 +39,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExpenseTest.testAmount">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="expenseTracker.Main" />
-      <module name="expenseTrackers" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="venmo_statement.csv file.csv" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -52,6 +51,7 @@
     </configuration>
     <configuration name="ExpenseTest.testAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="expenseTracker" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -62,6 +62,7 @@
       <option name="MAIN_CLASS_NAME" value="test.ExpenseTest" />
       <option name="METHOD_NAME" value="testAmount" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,11 +83,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.ExpenseTest.testAmount" />
+      <item itemvalue="JUnit.ExpenseTest.testName" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ExpenseTest.testAmount" />
         <item itemvalue="JUnit.ExpenseTest.testName" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -101,37 +107,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="126" key="#Main" timestamp="1591050216781">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="424" y="126" key="#Main" timestamp="1591132905366">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
+    <state x="424" y="126" key="#Main/0.23.1440.832@0.23.1440.832" timestamp="1591132905366" />
     <state x="424" y="126" key="#Main/0.23.1440.834@0.23.1440.834" timestamp="1591050216781" />
     <state x="424" y="126" key="#Main/0.23.1440.837@0.23.1440.837" timestamp="1590889653805" />
+    <state x="204" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591132632596">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="204" y="118" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.832@0.23.1440.832" timestamp="1591132632596" />
+    <state x="527" y="168" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591132617154">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="527" y="168" key="#com.intellij.ide.macro.MacrosDialog/0.23.1440.832@0.23.1440.832" timestamp="1591132617154" />
     <state x="478" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591049065042">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="478" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1591049065042" />
-    <state width="1358" height="204" key="GridCell.Tab.0.bottom" timestamp="1591130851837">
+    <state width="1358" height="204" key="GridCell.Tab.0.bottom" timestamp="1591132911879">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1591130851837" />
+    <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1591132911879" />
     <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1591050512919" />
     <state width="1358" height="204" key="GridCell.Tab.0.bottom/0.23.1440.837@0.23.1440.837" timestamp="1590890245629" />
-    <state width="1358" height="204" key="GridCell.Tab.0.center" timestamp="1591130851836">
+    <state width="1358" height="204" key="GridCell.Tab.0.center" timestamp="1591132911877">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1591130851836" />
+    <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1591132911877" />
     <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1591050512918" />
     <state width="1358" height="204" key="GridCell.Tab.0.center/0.23.1440.837@0.23.1440.837" timestamp="1590890245628" />
-    <state width="1358" height="204" key="GridCell.Tab.0.left" timestamp="1591130851836">
+    <state width="1358" height="204" key="GridCell.Tab.0.left" timestamp="1591132911877">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1591130851836" />
+    <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1591132911877" />
     <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1591050512917" />
     <state width="1358" height="204" key="GridCell.Tab.0.left/0.23.1440.837@0.23.1440.837" timestamp="1590890245627" />
-    <state width="1358" height="204" key="GridCell.Tab.0.right" timestamp="1591130851837">
+    <state width="1358" height="204" key="GridCell.Tab.0.right" timestamp="1591132911878">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1591130851837" />
+    <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1591132911878" />
     <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1591050512919" />
     <state width="1358" height="204" key="GridCell.Tab.0.right/0.23.1440.837@0.23.1440.837" timestamp="1590890245628" />
     <state x="452" y="357" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591129694858">
