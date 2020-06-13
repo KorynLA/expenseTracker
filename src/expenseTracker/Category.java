@@ -3,11 +3,12 @@ package expenseTracker;
 import java.util.Date;
 
 abstract class Category {
-    String transactionName;
-    static double totalTransactionCosts;
-    double transactionCost;
-    Date transactionDate;
-    double budget;
+
+    protected String transactionName;
+    protected static double totalTransactionCosts;
+    protected double transactionCost;
+    protected Date transactionDate;
+    protected double budget;
 
     Category(){}
     void setBudget(double budget) {
