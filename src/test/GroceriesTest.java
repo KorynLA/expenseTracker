@@ -1,10 +1,7 @@
 package test;
-import expenseTracker.Groceries;
+import expenseTracker.Category.Groceries;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.time.Month;
-import java.time.Year;
 
 public class GroceriesTest {
     @Test

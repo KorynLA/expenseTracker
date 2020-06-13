@@ -1,10 +1,12 @@
 package expenseTracker;
 
+import expenseTracker.Category.Category;
+
 import java.util.List;
 
 public class Month {
     String monthName;
-    List<Category> transactions;
+    //List<Category> transactions;
     double totalSpent;
 
     /***
