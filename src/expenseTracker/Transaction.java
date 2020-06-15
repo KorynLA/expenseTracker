@@ -7,6 +7,11 @@ public class Transaction {
     protected double transactionCost;
     protected Date transactionDate;
 
+    Transaction(transactionName, transactionCost, transactionDate) {
+        this.transactionName = transactionName;
+        this.transactionCost = transactionCost;
+        this.transactionDate = transactionDate;
+    }
     public String getTransactionName() {
         return transactionName;
     }
