@@ -8,6 +8,6 @@ import java.util.List;
 public class HomeImprovement extends Category{
     public HomeImprovement(){
         categoryTransaction = new ArrayList<Transaction>();
-        categoryName = "homeImprovement";
+        categoryName = "Home Improvement";
     }
 }

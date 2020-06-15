@@ -17,22 +17,25 @@ public class Month {
         setUpTransactionCategoryMap();
     }
     private void setUpTransactionCategoryMap() {
-        transactionCategoryMap.put("eatingout", new EatingOut());
-        transactionCategoryMap.put("pets", new Pets());
-        transactionCategoryMap.put("bills", new Bills());
-        transactionCategoryMap.put("entertainment", new Entertainment());
-        transactionCategoryMap.put("expenses", new Expenses1X());
-        transactionCategoryMap.put("material", new Material());
-        transactionCategoryMap.put("groceries", new Groceries());
-        transactionCategoryMap.put("homeimprovement", new HomeImprovement());
-        transactionCategoryMap.put("donations", new Donations());
+        transactionCategoryMap.put("Eating Out", new EatingOut());
+        transactionCategoryMap.put("Pets", new Pets());
+        transactionCategoryMap.put("Bills", new Bills());
+        transactionCategoryMap.put("Entertainment", new Entertainment());
+        transactionCategoryMap.put("Expenses", new Expenses1X());
+        transactionCategoryMap.put("Material", new Material());
+        transactionCategoryMap.put("Groceries", new Groceries());
+        transactionCategoryMap.put("Home improvement", new HomeImprovement());
+        transactionCategoryMap.put("Donations", new Donations());
 
+    }
+    public void addCategory(Category category) {
+        transactionCategoryMap.put(category.getCategoryName(), category);
     }
     double getTotalSpent() {
         return totalSpent;
     }
 
-    void setTotalSpent(Integer totalSpent) {
+    void setTotalSpent(double totalSpent) {
         this.totalSpent+=totalSpent;
     }
 
@@ -41,14 +44,13 @@ public class Month {
         return getTotal.getTotalSpent();
     }
 
-
     String getMostExpensiveCategory(){
         double maxSpent = 0;
         String maxName;
-        transactionCategoryMap.forEach((k, v) ->if(v.getTotalSpent() > maxSpent) {
+        transactionCategoryMap.forEach((k, v) -> (if(v.getTotalSpent() > maxSpent) {
             maxSpent = v.getTotalSpent();
             maxName = v.getCategoryName();
-        });
+        }));
     }
 
 }

@@ -9,6 +9,6 @@ public class Expenses1X extends Category {
 
     public Expenses1X() {
         categoryTransaction = new ArrayList<Transaction>();
-        categoryName = "expense1X";
+        categoryName = "Expenses";
     }
 }

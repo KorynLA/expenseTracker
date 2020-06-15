@@ -8,6 +8,6 @@ import java.util.List;
 public class EatingOut extends Category{
     public EatingOut(){
         categoryTransaction = new ArrayList<Transaction>();
-        categoryName = "eatingOut";
+        categoryName = "Eating Out";
     }
 }

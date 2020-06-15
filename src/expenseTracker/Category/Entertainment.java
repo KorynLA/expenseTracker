@@ -9,6 +9,6 @@ import java.util.List;
 public class Entertainment extends Category {
     public Entertainment(){
         categoryTransaction = new ArrayList<Transaction>();
-        categoryName = "entertainment";
+        categoryName = "Entertainment";
     }
 }
