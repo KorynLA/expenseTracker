@@ -58,4 +58,5 @@ public class CategoryFactoryTest {
         Category billsObject = factoryResult.getCategory(name, transactionCost, transactionName);
         Assert.assertNull(billsObject);
     }
+
 }
