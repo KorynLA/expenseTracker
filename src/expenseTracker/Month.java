@@ -8,18 +8,26 @@ import java.util.HashMap;
 
 public class Month {
     String monthName;
-    HashMap<String, List<Category>> transactionCategoryMap;
+    HashMap<String, Category> transactionCategoryMap;
     double totalSpent;
     Month(String monthName) {
         totalSpent = 0;
         this.monthName = monthName;
-        transactionCategoryMap = new HashMap<String, List<Category>>();
-        List<Bills> billsTransactions = new ArrayList<Bills>();
-        List<Entertainment> entertainmentTransactions = new ArrayList<Entertainment>();
-        transactionCategoryMap.put("bills", billsTransactions);
-        transactionCategoryMap.put("entertainment", entertainmentTransactions);
+        transactionCategoryMap = new HashMap<String, Category>();
+        setUpTransactionCategoryMap();
     }
+    private void setUpTransactionCategoryMap() {
+        transactionCategoryMap.put("eatingout", new EatingOut());
+        transactionCategoryMap.put("pets", new Pets());
+        transactionCategoryMap.put("bills", new Bills());
+        transactionCategoryMap.put("entertainment", new Entertainment());
+        transactionCategoryMap.put("expenses", new Expenses1X());
+        transactionCategoryMap.put("material", new Material());
+        transactionCategoryMap.put("groceries", new Groceries());
+        transactionCategoryMap.put("homeimprovement", new HomeImprovement());
+        transactionCategoryMap.put("donations", new Donations());
 
+    }
     double getTotalSpent() {
         return totalSpent;
     }
@@ -29,18 +37,18 @@ public class Month {
     }
 
     double getCategoryTotalCost(String category) {
-        Category getTotal = (transactionCategoryMap.get(category))[0];
+        Category getTotal = transactionCategoryMap.get(category);
         return getTotal.getTotalSpent();
     }
 
-/**
+
     String getMostExpensiveCategory(){
         double maxSpent = 0;
         String maxName;
-        transactionCategoryMap.forEach((k, v) ->if(v[0] > maxSpent) {
-            maxSpent = v[0];
-            maxName = (transactionCategoryMap.get(k))[0].
+        transactionCategoryMap.forEach((k, v) ->if(v.getTotalSpent() > maxSpent) {
+            maxSpent = v.getTotalSpent();
+            maxName = v.getCategoryName();
         });
     }
-**/
+
 }

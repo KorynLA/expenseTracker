@@ -1,13 +1,11 @@
 package expenseTracker;
 
-import java.util.Date;
-
 public class Transaction {
     protected String transactionName;
     protected double transactionCost;
-    protected Date transactionDate;
+    protected String transactionDate;
 
-    Transaction(transactionName, transactionCost, transactionDate) {
+    public Transaction(double transactionCost, String transactionName, String transactionDate) {
         this.transactionName = transactionName;
         this.transactionCost = transactionCost;
         this.transactionDate = transactionDate;
@@ -24,7 +22,7 @@ public class Transaction {
         System.out.println("Transaction Name: "+transactionName+" Cost: "+ transactionCost);
     }
 
-    public double getDate() {
+    public String getDate() {
         return transactionDate;
     }
 }

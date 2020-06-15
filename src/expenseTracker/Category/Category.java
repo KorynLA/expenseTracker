@@ -2,7 +2,6 @@ package expenseTracker.Category;
 
 import expenseTracker.Transaction;
 
-import java.util.Date;
 import java.util.List;
 
 public abstract class Category {
@@ -34,7 +33,7 @@ public abstract class Category {
         totalTransactionCosts+=transaction.getTransactionCost();
         categoryTransaction.add(transaction);
     }
-    public void displayTransaction() {
+    public void displayTransactions() {
         for(int i=0; i < categoryTransaction.size(); i++) {
             categoryTransaction.get(i).displayItemsAndCosts();
         }
