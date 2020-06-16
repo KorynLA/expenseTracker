@@ -1,15 +1,22 @@
 package expenseTracker;
 
 public class Transaction {
-    protected String transactionName;
-    protected double transactionCost;
-    protected String transactionDate;
+    private String transactionName;
+    private double transactionCost;
+    private String transactionDate;
 
-    public Transaction(double transactionCost, String transactionName, String transactionDate) {
+    public Transaction(double transactionCost, String transactionName, String transactionDate) throws IllegalArgumentException {
+        if(transactionName.equals("")) {
+            throw new IllegalArgumentException("Invalid transaction name");
+        }
+        if(transactionCost == 0) {
+            throw new IllegalArgumentException("Invalid transaction cost");
+        }
         this.transactionName = transactionName;
         this.transactionCost = transactionCost;
         this.transactionDate = transactionDate;
     }
+
     public String getTransactionName() {
         return transactionName;
     }

@@ -16,6 +16,7 @@ public class MonthTest {
     String material = "shirt";
     String date = "09/20/2020";
     Transaction testTransaction1, testTransaction2;
+
     //Setup testing
     @Before
     //Test the adding transaction
