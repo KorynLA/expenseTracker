@@ -8,6 +8,9 @@ import java.util.List;
 
 public class Pets extends Category {
 
+    /*
+     * Default subclass constructor to create the object.
+     */
     public Pets(){
         categoryTransaction = new ArrayList<Transaction>();
         categoryName = "Pets";

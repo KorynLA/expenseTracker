@@ -10,7 +10,7 @@ public class Month {
     String monthName;
     HashMap<String, Category> transactionCategoryMap;
     double totalSpent;
-    Month(String monthName) {
+    public Month(String monthName) {
         totalSpent = 0;
         this.monthName = monthName;
         transactionCategoryMap = new HashMap<String, Category>();
@@ -31,26 +31,29 @@ public class Month {
     public void addCategory(Category category) {
         transactionCategoryMap.put(category.getCategoryName(), category);
     }
-    double getTotalSpent() {
+    public double getTotalSpent() {
         return totalSpent;
     }
 
-    void setTotalSpent(double totalSpent) {
+    public void setTotalSpent(double totalSpent) {
         this.totalSpent+=totalSpent;
     }
 
-    double getCategoryTotalCost(String category) {
+    public double getCategoryTotalCost(String category) {
         Category getTotal = transactionCategoryMap.get(category);
         return getTotal.getTotalSpent();
     }
 
-    String getMostExpensiveCategory(){
+    public String getMostExpensiveCategory(){
         double maxSpent = 0;
-        String maxName;
-        transactionCategoryMap.forEach((k, v) -> (if(v.getTotalSpent() > maxSpent) {
-            maxSpent = v.getTotalSpent();
-            maxName = v.getCategoryName();
-        }));
+        String maxName = "";
+        for(String k : transactionCategoryMap.keySet()) {
+            if((transactionCategoryMap.get(k)).getTotalSpent() > maxSpent) {
+                maxSpent = (transactionCategoryMap.get(k)).getTotalSpent();
+                maxName = k;
+            }
+        }
+        return maxName;
     }
 
 }

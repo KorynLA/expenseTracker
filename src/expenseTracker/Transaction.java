@@ -21,7 +21,12 @@ public class Transaction {
     public void displayItemsAndCosts() {
         System.out.println("Transaction Name: "+transactionName+" Cost: "+ transactionCost);
     }
-
+    public void setTransactionCost(double transactionCost) {
+        this.transactionCost = transactionCost;
+    }
+    public void setTransactionName(String transactionName) {
+        this.transactionName = transactionName;
+    }
     public String getDate() {
         return transactionDate;
     }
