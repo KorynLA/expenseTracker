@@ -6,7 +6,7 @@ import java.util.List;
 
 public abstract class Category {
 
-    protected static double totalTransactionCosts;
+    protected double totalTransactionCosts;
     protected double budget;
     protected String categoryName;
     List<Transaction> categoryTransaction;
@@ -22,6 +22,9 @@ public abstract class Category {
     * Return: None
     */
     public void setBudget(double budget) {
+        if(budget < 0) {
+            throw new IllegalArgumentException("Budget cannot be negative");
+        }
         this.budget = budget;
     }
 
@@ -67,7 +70,7 @@ public abstract class Category {
     * Return: None
     */
     public void addTransaction(Transaction transaction) {
-        totalTransactionCosts+=transaction.getTransactionCost();
+        totalTransactionCosts+= transaction.getTransactionCost();
         categoryTransaction.add(transaction);
     }
 
@@ -80,5 +83,21 @@ public abstract class Category {
         for(int i=0; i < categoryTransaction.size(); i++) {
             categoryTransaction.get(i).displayItemsAndCosts();
         }
+    }
+    /*
+     * A getter function that returns the amount of transaction in the Category
+     * Params: None
+     * Return: Size of the List as an int
+     */
+    public int getTransactionLength() {
+        return categoryTransaction.size();
+    }
+    /*
+     * A getter function that returns the transactions in the Category
+     * Params: None
+     * Return: The List of Transactions
+     */
+    public List<Transaction> getCategoryTransactions() {
+        return categoryTransaction;
     }
 }
